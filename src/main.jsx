@@ -5,9 +5,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Footer from './Components/Footer/Footer';
+import Appliedjobs from './Components/Applied jobs/Appliedjobs';
+import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import Root from './Components/Root/Root';
+import Statistics from './Components/Statistics/Statistics';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -20,9 +22,18 @@ const router = createBrowserRouter([
       element:<Home></Home>
       },
       {
-        path: '/footer',
-        element:<Footer></Footer>
+        path: '/blog',
+        element: <Blog></Blog>,
+      },
+      {
+        path: '/Statistics',
+        element:<Statistics></Statistics>
+      },
+      {
+        path: '/Applied jobs',
+        element:<Appliedjobs></Appliedjobs>
       }
+
     ]
   },
 ]);
